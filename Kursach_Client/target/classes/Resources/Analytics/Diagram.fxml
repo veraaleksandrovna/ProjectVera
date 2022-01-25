@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="463.0" prefWidth="739.0" style="-fx-background-color: #F3D4FF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Analytics.DiagramController">
+   <children>
+      <Button fx:id="buttonBack" layoutX="69.0" layoutY="423.0" mnemonicParsing="false" onAction="#Back_Pressed" style="-fx-background-radius: 10;" text="Назад">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font></Button>
+      <LineChart fx:id="Chart" layoutX="30.0" prefHeight="400.0" prefWidth="750.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <xAxis>
+          <CategoryAxis fx:id="categoryAxis" animated="false" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="numberAxis" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <ChoiceBox fx:id="choiceboxProduction" layoutX="540.0" layoutY="420.0" onAction="#Produce_Chosen" prefWidth="150.0" style="-fx-font-size: 18; -fx-background-radius: 10;" />
+      <Label layoutX="361.0" layoutY="430.0" text="Выбор продукции:">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
