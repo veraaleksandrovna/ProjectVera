@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="477.0" prefWidth="315.0" style="-fx-background-color: #F3D4FF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.New.StandartNewController">
+    <children>
+        <Label layoutX="53.0" layoutY="27.0" text="Название:">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font></Label>
+        <Button fx:id="buttonOk" layoutX="126.0" layoutY="396.0" mnemonicParsing="false" onAction="#Ok_Pressed" prefHeight="34.0" prefWidth="63.0" style="-fx-background-radius: 10;" text="ОК">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font></Button>
+        <Button fx:id="buttonBack" layoutX="118.0" layoutY="430.0" mnemonicParsing="false" onAction="#Back_Pressed" prefHeight="34.0" prefWidth="80.0" style="-fx-background-radius: 10; -fx-background-color: transparent;" text="Назад">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font></Button>
+      <TextField fx:id="textfieldName" focusTraversable="false" layoutX="54.0" layoutY="49.0" style="-fx-font-size: 18;" />
+        <Spinner fx:id="spinnerStrength" focusTraversable="false" layoutX="54.0" layoutY="110.0" style="-fx-font-size: 18;" />
+        <Label layoutX="54.0" layoutY="88.0" text="Прочность:">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font></Label>
+      <Spinner fx:id="spinnerWeight" focusTraversable="false" layoutX="54.0" layoutY="171.0" style="-fx-font-size: 18;" />
+      <Label layoutX="54.0" layoutY="149.0" text="Вес:">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font></Label>
+      <Spinner fx:id="spinnerSize" focusTraversable="false" layoutX="54.0" layoutY="228.0" style="-fx-font-size: 18;" />
+      <Label layoutX="55.0" layoutY="210.0" text="Размер:">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font></Label>
+      <Spinner fx:id="spinnerThickness" focusTraversable="false" layoutX="54.0" layoutY="289.0" style="-fx-font-size: 18;" />
+      <Label layoutX="54.0" layoutY="267.0" text="Толщина:">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font></Label>
+      <Spinner fx:id="spinnerAppearance" focusTraversable="false" layoutX="54.0" layoutY="350.0" style="-fx-font-size: 18;" />
+      <Label layoutX="53.0" layoutY="328.0" text="Внешний вид:">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font></Label>
+        <Label fx:id="labelMessage" layoutX="55.0" layoutY="394.0" text="Label" textFill="RED" visible="false">
+         <font>
+            <Font name="Cambria" size="16.0" />
+         </font></Label>
+    </children>
+</AnchorPane>
